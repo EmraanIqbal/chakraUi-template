@@ -14,7 +14,8 @@ import imageOne from "../assets/image-one.jpg";
 import imageTwo from "../assets/image-two.jpg";
 import imageThree from "../assets/image-three.jpg";
 import { useColorMode } from "@chakra-ui/color-mode";
-
+// import { IoLocationSharp } from "react-icons";
+import { IoLocationSharp } from "@react-icons/all-files/fa/IoLocationSharp";
 import { ArrowForwardIcon, MoonIcon, SearchIcon } from "@chakra-ui/icons";
 
 const Banner = () => {
@@ -233,7 +234,7 @@ const Banner = () => {
                 <InputGroup>
                   <InputLeftElement
                     pointerEvents="none"
-                    children={<SearchIcon color="gray.300" />}
+                    children={<IoLocationSharp color="gray.300" />}
                   />
                   <Input
                     size="lg"
