@@ -1,12 +1,6 @@
 import { Image } from "@chakra-ui/image";
 import { Badge, Box, Container, Heading } from "@chakra-ui/layout";
-import {
-  Button,
-  Grid,
-  Input,
-  InputGroup,
-  InputLeftElement,
-} from "@chakra-ui/react";
+import { Button, Grid, FormControl, Input } from "@chakra-ui/react";
 import React from "react";
 import brandLogo from "../assets/brand-logo.svg";
 import illustration from "../assets/illustration.svg";
@@ -15,7 +9,7 @@ import imageTwo from "../assets/image-two.jpg";
 import imageThree from "../assets/image-three.jpg";
 import { useColorMode } from "@chakra-ui/color-mode";
 
-import { ArrowForwardIcon, MoonIcon, SearchIcon } from "@chakra-ui/icons";
+import { ArrowForwardIcon, MoonIcon } from "@chakra-ui/icons";
 
 const Banner = () => {
   const { toggleColorMode } = useColorMode();
@@ -37,8 +31,6 @@ const Banner = () => {
               colorScheme="gray.600"
               fontSize="md"
               variant="ghost"
-              // border="none"
-              // disabled
             >
               <MoonIcon />
             </Button>
@@ -215,38 +207,167 @@ const Banner = () => {
 
       <Box mt="50px">
         <Container maxWidth="1100">
-          <Box d="flex" justifyContent="space-between">
-            <Box w="50%">
-              <Heading as="h5">What do you want to do?</Heading>
-              <Box d="flex" justifyContent="space-between" mt="20px" w="45%">
-                <InputGroup>
-                  <InputLeftElement
-                    pointerEvents="none"
-                    children={<SearchIcon color="gray.300" />}
-                  />
-                  <Input
-                    size="lg"
-                    type="text"
-                    placeholder='Search for "tennis"'
-                  />
-                </InputGroup>
-                <InputGroup>
-                  <InputLeftElement
-                    pointerEvents="none"
-                    children={<SearchIcon color="gray.300" />}
-                  />
-                  <Input
-                    size="lg"
-                    type="text"
-                    placeholder='Search for "tennis"'
-                  />
-                </InputGroup>
+          <Grid templateColumns="repeat(2, 1fr) " gap={6}>
+            <Box>
+              <Heading as="h3" size="lg" mb="7">
+                What do you want to do?
+              </Heading>
+              <Box d="flex" alignItems="center" flexDirection="row" w="100%">
+                <Box flexBasis="50%" w="100%" mr="2">
+                  <FormControl>
+                    <Box pos="relative">
+                      <Input
+                        pl="8"
+                        placeholder='Search for "tennis"'
+                        type="text"
+                        w="100%"
+                      />
+                      <Box pos="absolute" top="3" left="2">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="18"
+                          height="18"
+                          viewBox="0 0 20 20"
+                          fill="#d9d9d9"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                      </Box>
+                    </Box>
+                  </FormControl>
+                </Box>
+                <Box flexBasis="50%" ml="2">
+                  <FormControl id="email">
+                    <Box pos="relative">
+                      <Input pl={"8"} placeholder="Location" type="text" />
+                      <Box pos="absolute" top="3" left="2">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="18"
+                          height="18"
+                          viewBox="0 0 20 20"
+                          fill="#d9d9d9"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                      </Box>
+                    </Box>
+                  </FormControl>
+                </Box>
+              </Box>
+              <Button
+                _hover={{ opacity: "0.8" }}
+                mt="5"
+                pt="6"
+                pb="6"
+                w="100%"
+                color="#ffffff"
+                bg="#F65858"
+                fontSize="lg"
+              >
+                <Box fontWeight="black">Search</Box>
+              </Button>
+            </Box>
+            <Box ml="50">
+              <Heading as="h3" size="lg" mb="7">
+                See what’s happening
+              </Heading>
+              <Box display="flex" flexWrap="wrap" justifyContent="flex-start">
+                <Badge
+                  borderRadius="3xl"
+                  px={5}
+                  py={2}
+                  mr="4"
+                  mb="4"
+                  color="#ffffff"
+                  textTransform="normal"
+                  bg="blue.100"
+                >
+                  Starting soon
+                </Badge>
+                <Badge
+                  borderRadius="3xl"
+                  px={5}
+                  py={2}
+                  mr="4"
+                  mb="4"
+                  color="#ffffff"
+                  textTransform="normal"
+                  bg="blue.100"
+                >
+                  Today
+                </Badge>
+                <Badge
+                  borderRadius="3xl"
+                  px={5}
+                  py={2}
+                  mr="4"
+                  mb="4"
+                  color="#ffffff"
+                  textTransform="normal"
+                  bg="blue.100"
+                >
+                  Tomorrow
+                </Badge>
+                <Badge
+                  borderRadius="3xl"
+                  px={5}
+                  py={2}
+                  mr="4"
+                  mb="4"
+                  color="#ffffff"
+                  textTransform="normal"
+                  bg="blue.100"
+                >
+                  This Week
+                </Badge>
+                <Badge
+                  borderRadius="3xl"
+                  px={5}
+                  py={2}
+                  mr="4"
+                  mb="4"
+                  color="#ffffff"
+                  textTransform="normal"
+                  bg="blue.100"
+                >
+                  Online
+                </Badge>
+                <Badge
+                  borderRadius="3xl"
+                  px={5}
+                  py={2}
+                  mr="4"
+                  mb="4"
+                  color="#ffffff"
+                  textTransform="normal"
+                  bg="blue.100"
+                >
+                  In person
+                </Badge>
+                <Badge
+                  borderRadius="3xl"
+                  px={5}
+                  py={2}
+                  mr="4"
+                  mb="4"
+                  color="#ffffff"
+                  textTransform="normal"
+                  bg="blue.100"
+                >
+                  Trending near you
+                </Badge>
               </Box>
             </Box>
-            <Box w="50%">
-              <Heading as="h5">See what’s happening</Heading>
-            </Box>
-          </Box>
+          </Grid>
         </Container>
       </Box>
     </>
