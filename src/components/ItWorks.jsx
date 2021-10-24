@@ -12,43 +12,52 @@ const ItWorks = () => {
     <Box>
       <Container maxW="1100" my="20">
         <Heading textAlign="center">How Meetup works</Heading>
-        <Text textAlign="center" mr="300px" ml="300px">
-          Meet new people who share your interests through online and in-person
-          events. It’s free to create an account.
-        </Text>
+        <Box align="center" maxW="500px" mx="auto" pb="10">
+          <Text>
+            Meet new people who share your interests through online and
+            in-person events. It’s free to create an account.
+          </Text>
+        </Box>
         <Box
           my="10"
           d="flex"
-          alignItems="center"
           justifyContent="space-between"
           w="100%"
+          align="center"
         >
           <Box w="27%">
-            <Image src={joinGroup} alt="join" alignItems="center" />
-            <Button variant="link" ml="30">
+            <Image src={joinGroup} alt="join" />
+            <Button variant="link" color="blue.100">
               Join a group
             </Button>
-            <Text textAlign="center">
+            <Text>
               Do what you love, meet others who love it, find your community.
               The rest is history!
             </Text>
           </Box>
           <Box w="27%">
-            <Image src={ticket} alt="join" alignItems="center" mb={3 + 2} />
-            <Button variant="link">Find an event</Button>
-            <Text textAlign="center">
+            <Image src={ticket} alt="join" mb={2} />
+            <Button variant="link" color="blue.100">
+              Find an event
+            </Button>
+            <Text>
               Events are happening on just about any topic you can think of,
               from online gaming and photography to yoga and hiking.
             </Text>
           </Box>
           <Box w="27%">
             <Image src={startGroup} alt="join" />
-            <Button variant="link">start a group</Button>
-            <Text textAlign="center">
+            <Button variant="link" color="blue.100">
+              Start a group
+            </Button>
+            <Text>
               You don’t have to be an expert to gather people together and
               explore shared interests.
             </Text>
           </Box>
+        </Box>
+        <Box align="center">
+          <Button bg="blue.100">Join Meetup</Button>
         </Box>
       </Container>
     </Box>
