@@ -24,7 +24,7 @@ const Upcoming = () => {
           </Heading>
           <Spacer />
           <Link fontWeight="semibold" fontSize="20" color="teal.500">
-            Explore more events
+            Explore more event
           </Link>
         </Flex>
         <Box mt="10">
