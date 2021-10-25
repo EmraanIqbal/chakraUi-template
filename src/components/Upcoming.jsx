@@ -20,7 +20,7 @@ const Upcoming = () => {
       <Container maxW="1100" my="20">
         <Flex>
           <Heading as="h3" alignItems="center" size="lg">
-            Upcoming online events
+            Upcoming online event
           </Heading>
           <Spacer />
           <Link fontWeight="semibold" fontSize="20" color="teal.500">
