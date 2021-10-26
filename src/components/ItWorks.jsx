@@ -15,7 +15,7 @@ const ItWorks = () => {
         <Box align="center" maxW="500px" mx="auto" pb="10">
           <Text>
             Meet new people who share your interests through online and
-            in-person events. It’s free to create an account.
+            in-person events. It’s free to create an account
           </Text>
         </Box>
         <Box
