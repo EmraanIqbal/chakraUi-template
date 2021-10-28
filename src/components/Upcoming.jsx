@@ -19,7 +19,7 @@ const Upcoming = () => {
     <Box>
       <Container maxW="1100" mt="100px">
         <Flex>
-          <Heading as="h3" alignItems="center" size="lg">
+          <Heading as="h1" alignItems="center" size="xl">
             Upcoming online events
           </Heading>
           <Spacer />
@@ -31,7 +31,12 @@ const Upcoming = () => {
       <Container maxW="1100">
         <Box mt="10" d="flex" justifyContent="space-between">
           <Box position="relative" w="22%">
-            <Image position="relative" src={Upcomingone} alt="brand" />
+            <Image
+              position="relative"
+              src={Upcomingone}
+              alt="brand"
+              borderRadius="5"
+            />
             <Box
               position="absolute"
               d="flex"
@@ -59,7 +64,9 @@ const Upcoming = () => {
                 Online Event
               </Box>
             </Box>
-            <Box m="10px 10px 2px 10px">THU, OCT 28 @ 3:30 PM PDT</Box>
+            <Box color="#aaa79d" m="10px 10px 2px 10px">
+              THU, OCT 28 @ 3:30 PM PDT
+            </Box>
             <Heading as="h6" size="xs" w="300px" m="5px 10px 2px 10px">
               Personal Growth Book Club:
               <br /> Atomic Habits
@@ -111,7 +118,12 @@ const Upcoming = () => {
             </Box>
           </Box>
           <Box position="relative" w="22%">
-            <Image position="relative" src={Upcomingtwo} alt="brand" />
+            <Image
+              position="relative"
+              src={Upcomingtwo}
+              alt="brand"
+              borderRadius="5"
+            />
             <Box
               position="absolute"
               d="flex"
@@ -139,7 +151,9 @@ const Upcoming = () => {
                 Online Event
               </Box>
             </Box>
-            <Box m="10px 10px 2px 10px">THU, OCT 28 @ 3:30 PM PDT</Box>
+            <Box color="#aaa79d" m="10px 10px 2px 10px">
+              THU, OCT 28 @ 3:30 PM PDT
+            </Box>
             <Heading as="h6" size="xs" w="300px" m="5px 10px 2px 10px">
               Personal Growth Book Club:
               <br /> Atomic Habits
@@ -191,7 +205,12 @@ const Upcoming = () => {
             </Box>
           </Box>
           <Box position="relative" w="22%">
-            <Image position="relative" src={Upcomingthree} alt="brand" />
+            <Image
+              position="relative"
+              src={Upcomingthree}
+              alt="brand"
+              borderRadius="5"
+            />
             <Box
               position="absolute"
               d="flex"
@@ -219,7 +238,9 @@ const Upcoming = () => {
                 Online Event
               </Box>
             </Box>
-            <Box m="10px 10px 2px 10px">THU, OCT 28 @ 3:30 PM PDT</Box>
+            <Box color="#aaa79d" m="10px 10px 2px 10px">
+              THU, OCT 28 @ 3:30 PM PDT
+            </Box>
             <Heading as="h6" size="xs" w="300px" m="5px 10px 2px 10px">
               Personal Growth Book Club:
               <br /> Atomic Habits
@@ -271,7 +292,12 @@ const Upcoming = () => {
             </Box>
           </Box>
           <Box position="relative" w="22%">
-            <Image position="relative" src={Upcomingfour} alt="brand" />
+            <Image
+              position="relative"
+              src={Upcomingfour}
+              alt="brand"
+              borderRadius="5"
+            />
             <Box
               position="absolute"
               d="flex"
@@ -299,7 +325,9 @@ const Upcoming = () => {
                 Online Event
               </Box>
             </Box>
-            <Box m="10px 10px 2px 10px">THU, OCT 28 @ 3:30 PM PDT</Box>
+            <Box color="#aaa79d" m="10px 10px 2px 10px">
+              THU, OCT 28 @ 3:30 PM PDT
+            </Box>
             <Heading as="h6" size="xs" w="300px" m="5px 10px 2px 10px">
               Personal Growth Book Club:
               <br /> Atomic Habits
