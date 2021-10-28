@@ -142,7 +142,7 @@ const Footer = () => {
         <Box d="flex" mt="20">
           {" "}
           <Link mr="5" fontSize="sm">
-            © 2021 Meetup
+            © 2021 Emraan Iqbal
           </Link>
           <Link mr="5" fontSize="sm">
             Terms of Service
