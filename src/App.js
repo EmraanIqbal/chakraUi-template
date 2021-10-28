@@ -4,6 +4,7 @@ import Upcoming from "./components/Upcoming";
 import Popular from "./components/Popular";
 import Stories from "./components/Stories";
 import AppStore from "./components/AppStore";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Popular />
       <AppStore />
       <Stories />
+      <Footer />
     </>
   );
 }
